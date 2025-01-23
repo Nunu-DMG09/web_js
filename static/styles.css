@@ -121,13 +121,13 @@ body {
     font-size: 0.9rem;
 }
 
-.contact-section{
+.contacto-section{
     padding: 3rem;
     background: #333;
     color: white;
     text-align: center;
 }
-.contact-section h2{
+.contacto-section h2{
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
 }
@@ -240,6 +240,23 @@ footer{
 
 /* DISEÑO RESPONSIVO */
 @media (max-width: 768px) {
-    
+    .nav-link{
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-link.active {
+        display: flex;
+        background: #000;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 1rem;
+    }
+
+    .burger {
+        display: flex;
+    }
 }
 
