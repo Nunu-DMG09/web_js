@@ -32,3 +32,9 @@ def index():
 @app.route('/send_email', methods=['POST'])
 def send_email():
     try:
+        nombre = request.form['nombre']
+        correo = request.form['correo']
+        mensaje = request.form['mensaje']
+
+        # Aqui se creo un mensaje al correo
+        msg = Message('Nuevo mensaje')
